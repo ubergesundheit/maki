@@ -13,6 +13,9 @@ Maki follows these design principles:
 
 To view the backlog of icons that need to be created, visit https://github.com/mapbox/maki/wiki/Maki-Backlog
 
+Use deploy.sh to deploy new icons to MapBox. This requires
+[s3cmd](http://s3tools.org/s3cmd) configured with proper credentials.
+
 ## Completed icons
 
 
