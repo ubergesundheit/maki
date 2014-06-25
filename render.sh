@@ -66,8 +66,9 @@ function build_css {
     count=0
     dx=0
     dy=0
-    maxwidth=$((54*$tilex/3-1))
-
+    maxwidth=$((18*$tilex))
+    echo $tilex
+    echo $maxwidth
     cat www/maki-sprite.css.tpl > www/maki-sprite.css
 
     for icon in $@; do
@@ -77,15 +78,17 @@ function build_css {
 
         echo ".maki-icon.$icon { background-position: ${dx}px ${dy}px; }" \
             >> www/maki-sprite.css
+	echo $dx
+	echo $dy
 
         # Check if we need to add a new row yet,
         # and if so, adjust dy and dy accordingly.
         # Otherwise just adjust dx.
-        if [ $(($count * 3 % $tilex)) -eq 0 ]; then
-            dy=$(($dy - 24))
+        if [ $(($count % $tilex)) -eq 0 ]; then
+            dy=$(($dy - 18))
             dx=0
         else
-            dx=$(($dx - 54))
+            dx=$(($dx - 18))
         fi
     done
 
@@ -115,9 +118,9 @@ function build_positions {
 
         count=$(($count + 1))
 
-        echo "\"$icon-24\": { \"x\": $((-1 * dx)), \"y\": $((-1 * $dy)), \"width\": 24, \"height\": 24 }," >> $file
+        #echo "\"$icon-24\": { \"x\": $((-1 * dx)), \"y\": $((-1 * $dy)), \"width\": 24, \"height\": 24 }," >> $file
         echo "\"$icon-18\": { \"x\": $((-1 * dx + 24)), \"y\": $((-1 * $dy)), \"width\": 18, \"height\": 18 }," >> $file
-        echo -n "\"$icon-12\": { \"x\": $((-1 * dx + 42)), \"y\": $((-1 * $dy)), \"width\": 12, \"height\": 12 }" >> $file
+        #echo -n "\"$icon-12\": { \"x\": $((-1 * dx + 42)), \"y\": $((-1 * $dy)), \"width\": 12, \"height\": 12 }" >> $file
 
         # Check if we need to add a new row yet,
         # and if so, adjust dy and dy accordingly.
@@ -158,9 +161,9 @@ icons=$(grep '"icon":' www/maki.json \
     | tr '\n' ' ')
 
 # Build lists of all the SVG and PNG files from the icons list
-svgs=$(for icon in $icons; do echo -n $svgdir/${icon}-{24,18,12}.svg" "; done)
-pngs=$(for icon in $icons; do echo -n $pngdir/${icon}-{24,18,12}.png" "; done)
-pngs2x=$(for icon in $icons; do echo -n $pngdir/${icon}-{24,18,12}@2x.png" "; done)
+svgs=$(for icon in $icons; do echo -n $svgdir/${icon}-18.svg" "; done)
+pngs=$(for icon in $icons; do echo -n $pngdir/${icon}-18.png" "; done)
+pngs2x=$(for icon in $icons; do echo -n $pngdir/${icon}-18@2x.png" "; done)
 
 case $@ in
     png | pngs )
