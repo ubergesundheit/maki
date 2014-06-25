@@ -1,5 +1,185 @@
 [
     {
+      "name": "0",
+      "tags": [],
+      "icon": "0"
+    },
+    {
+      "name": "1",
+      "tags": [],
+      "icon": "1"
+    },
+    {
+      "name": "2",
+      "tags": [],
+      "icon": "2"
+    },
+    {
+      "name": "3",
+      "tags": [],
+      "icon": "3"
+    },
+    {
+      "name": "4",
+      "tags": [],
+      "icon": "4"
+    },
+    {
+      "name": "5",
+      "tags": [],
+      "icon": "5"
+    },
+    {
+      "name": "6",
+      "tags": [],
+      "icon": "6"
+    },
+    {
+      "name": "7",
+      "tags": [],
+      "icon": "7"
+    },
+    {
+      "name": "8",
+      "tags": [],
+      "icon": "8"
+    },
+    {
+      "name": "9",
+      "tags": [],
+      "icon": "9"
+    },
+    {
+      "name": "a",
+      "tags": [],
+      "icon": "a"
+    },
+    {
+      "name": "b",
+      "tags": [],
+      "icon": "b"
+    },
+    {
+      "name": "c",
+      "tags": [],
+      "icon": "c"
+    },
+    {
+      "name": "d",
+      "tags": [],
+      "icon": "d"
+    },
+    {
+      "name": "e",
+      "tags": [],
+      "icon": "e"
+    },
+    {
+      "name": "f",
+      "tags": [],
+      "icon": "f"
+    },
+    {
+      "name": "g",
+      "tags": [],
+      "icon": "g"
+    },
+    {
+      "name": "h",
+      "tags": [],
+      "icon": "h"
+    },
+    {
+      "name": "i",
+      "tags": [],
+      "icon": "i"
+    },
+    {
+      "name": "j",
+      "tags": [],
+      "icon": "j"
+    },
+    {
+      "name": "k",
+      "tags": [],
+      "icon": "k"
+    },
+    {
+      "name": "l",
+      "tags": [],
+      "icon": "l"
+    },
+    {
+      "name": "m",
+      "tags": [],
+      "icon": "m"
+    },
+    {
+      "name": "n",
+      "tags": [],
+      "icon": "n"
+    },
+    {
+      "name": "o",
+      "tags": [],
+      "icon": "o"
+    },
+    {
+      "name": "p",
+      "tags": [],
+      "icon": "p"
+    },
+    {
+      "name": "q",
+      "tags": [],
+      "icon": "q"
+    },
+    {
+      "name": "r",
+      "tags": [],
+      "icon": "r"
+    },
+    {
+      "name": "s",
+      "tags": [],
+      "icon": "s"
+    },
+    {
+      "name": "t",
+      "tags": [],
+      "icon": "t"
+    },
+    {
+      "name": "u",
+      "tags": [],
+      "icon": "u"
+    },
+    {
+      "name": "v",
+      "tags": [],
+      "icon": "v"
+    },
+    {
+      "name": "w",
+      "tags": [],
+      "icon": "w"
+    },
+    {
+      "name": "x",
+      "tags": [],
+      "icon": "x"
+    },
+    {
+      "name": "y",
+      "tags": [],
+      "icon": "y"
+    },
+    {
+      "name": "z",
+      "tags": [],
+      "icon": "z"
+    }
+    {
         "name": "Circle stroked",
         "tags": [
             "circle",
